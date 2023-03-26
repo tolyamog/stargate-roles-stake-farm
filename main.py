@@ -300,8 +300,8 @@ def approve_contract(web3, private_key, network, adr_dict, my_address):
         # Если транза зафейлиться, можно попробовать код ниже, увеличит на 25% объем газа который рекомендует сеть
         # можно применять в любой функции и контракте, оставляю здесь для заметки
         estimate = web3.eth.estimate_gas(contract_txn)
-        gas_limit = estimate
-        # gas_limit = int(estimate + estimate * 0.25)
+        # gas_limit = estimate
+        gas_limit = int(estimate + estimate * 0.15)
         contract_txn['gas'] = gas_limit
 
         signed_txn = web3.eth.account.sign_transaction(contract_txn, private_key)
@@ -443,7 +443,7 @@ if __name__ == "__main__":
 
         # 1) покупаем STG
         # USDC_amount = 0.01
-        USDC_amount = random.uniform(57.0497, 60.9)  # покупаем 131-140 монет на 61$ макс по курсу, на момент написания кода
+        USDC_amount = random.uniform(85.16034, 91)  # покупаем 131-140 монет на 61$ макс по курсу, на момент написания кода
         swap_out_str = 'USDC'
         swap_in_str = 'STG'
 
