@@ -1,5 +1,7 @@
 # stargate-roles-stake-farm
 
+pip install web3==5.31.1
+
 Уже только ленивый не [написал про LayerZero и их площадку Stargate Finance] , поэтому если у тебя много акков, а активность нужно сделать, и лень все делать вручную, то данный скрипт поможет тебе! Он делает следующее в сети Arbitrum:
 
 [написал про LayerZero и их площадку Stargate Finance]: //t.me/crypto_razeb/848
