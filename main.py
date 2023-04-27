@@ -63,8 +63,8 @@ txn_explorer = {
 }
 
 
-sl_sec_beg = 15
-sl_sec_end = 30
+sl_sec_beg = 35
+sl_sec_end = 60
 
 
 def int_to_decimal(qty, decimal):
@@ -443,7 +443,7 @@ if __name__ == "__main__":
 
         # 1) покупаем STG
         # USDC_amount = 0.01
-        USDC_amount = random.uniform(118, 125)  # покупаем 131-140 монет на 61$ макс по курсу, на момент написания кода
+        USDC_amount = random.uniform(102, 107)  # покупаем 131-140 монет на 61$ макс по курсу, на момент написания кода
         swap_out_str = 'USDC'
         swap_in_str = 'STG'
 
